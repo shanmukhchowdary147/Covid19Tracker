@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".AffectedCountries">
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -14,11 +15,13 @@
         android:layout_margin="10dp"
         android:maxLines="1"
         android:singleLine="true"
-        android:paddingLeft="10dp"
         android:hint="Search"
-        android:drawablePadding="15dp"/>
-<!--        android:background="@drawable/edittext_shadow"-->
-<!--        android:drawableLeft="@drawable/ic_search_black_24dp"-->
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:drawablePadding="15dp"
+        android:background="#FDFCFC"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/black"/>
 
 
     <ListView

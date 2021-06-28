@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_white"
+    android:background="#FFFDD1"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -14,12 +14,14 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#FFFFFF"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -49,7 +51,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/cases" />
+                        android:background="#FFA726" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -68,7 +70,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/cases" />
+                        android:background="#66BB6A" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -87,7 +89,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/cases" />
+                        android:background="#EF5350" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -106,7 +108,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/cases" />
+                        android:background="#29B6F6" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -130,13 +132,13 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E6D09F">
+            android:background="#FFFFFF">
 
             <com.leo.simplearcloader.SimpleArcLoader
                 android:id="@+id/loader"
@@ -199,7 +201,6 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -235,7 +236,6 @@
                             android:fontFamily="sans-serif-light"
                             android:text="0"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -272,7 +272,7 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
+
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -309,7 +309,6 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -346,7 +345,7 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
+
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -383,7 +382,7 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
+
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -420,7 +419,6 @@
                             android:text="0"
 
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -456,7 +454,6 @@
                             android:fontFamily="sans-serif-light"
                             android:text="0"
                             android:textAlignment="textEnd"
-                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
@@ -484,13 +481,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/color_one"
+        android:fontFamily="@font/averia_libre_bold"
         android:onClick="goTrackCountries"
         android:padding="5dp"
         android:text="Track countries"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="14sp" />
 
 
 </RelativeLayout>
