@@ -9,19 +9,23 @@
 
 
     <EditText
+        android:id="@+id/edtSearch"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:id="@+id/edtSearch"
-        android:layout_margin="10dp"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:hint="Search"
-        android:textColorHint="@color/black"
-        android:textColor="@color/black"
-        android:drawablePadding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#FDFCFC"
         android:drawableLeft="@drawable/ic_baseline_search_24"
-        android:drawableTint="@color/black"/>
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/averia_libre_bold"
+        android:hint="Search"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
 
     <ListView
