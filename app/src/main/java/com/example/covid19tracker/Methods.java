@@ -1,6 +1,7 @@
 package com.example.covid19tracker;
 
-import com.example.covid19tracker.Models.CountryModel;
+import com.example.covid19tracker.Models.All;
+import com.example.covid19tracker.Models.Country;
 
 import java.util.List;
 
@@ -10,8 +11,7 @@ import retrofit2.http.GET;
 public interface Methods
 {
     @GET("v2/countries/")
-    Call<List<CountryModel>> getContDAta();
+    Call<List<Country>> getContDAta();
     @GET("v2/all/")
-    Call<List<CountryModel>> getAllDAta();
-
+    Call<All> getAllData();
 }

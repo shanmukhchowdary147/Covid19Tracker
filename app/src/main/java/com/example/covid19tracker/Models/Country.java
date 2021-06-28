@@ -1,13 +1,23 @@
 package com.example.covid19tracker.Models;
 
-public class CountryModel {
-    private String flag,country,cases,todayCases,deaths,todayDeaths,recovered,active,critical;
+public class Country {
+    private String flag, country,cases,todayCases,deaths,todayDeaths,recovered,active,critical;
+    countryInfo countryInfo;
 
-    public CountryModel() {
+    public com.example.covid19tracker.Models.countryInfo getCountryInfo() {
+        return countryInfo;
     }
 
-    public CountryModel(String flag, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String active, String critical) {
-        this.flag = flag;
+    public void setCountryInfo(com.example.covid19tracker.Models.countryInfo countryInfo) {
+        this.countryInfo = countryInfo;
+    }
+
+
+    public Country() {
+    }
+
+    public Country(String flag, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String active, String critical) {
+        this.flag=flag;
         this.country = country;
         this.cases = cases;
         this.todayCases = todayCases;
@@ -23,7 +33,7 @@ public class CountryModel {
     }
 
     public void setFlag(String flag) {
-        this.flag = flag;
+        this.flag=flag;
     }
 
     public String getCountry() {

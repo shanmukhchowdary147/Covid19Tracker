@@ -13,18 +13,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
-import com.example.covid19tracker.Models.CountryModel;
+import com.example.covid19tracker.Models.Country;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
+public class MyCustomAdapter extends ArrayAdapter<Country> {
 
     private Context context;
-    private List<CountryModel> countryModelsList;
-    private List<CountryModel> countryModelsListFiltered;
+    private List<Country> countryModelsList;
+    private List<Country> countryModelsListFiltered;
 
-    public MyCustomAdapter( Context context, List<CountryModel> countryModelsList) {
+    public MyCustomAdapter( Context context, List<Country> countryModelsList) {
         super(context, R.layout.list_custom_item,countryModelsList);
 
         this.context = context;
@@ -54,7 +54,7 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
 
     @Nullable
     @Override
-    public CountryModel getItem(int position) {
+    public Country getItem(int position) {
         return countryModelsListFiltered.get(position);
     }
 
@@ -75,10 +75,10 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
                     filterResults.values = countryModelsList;
 
                 }else{
-                    List<CountryModel> resultsModel = new ArrayList<>();
+                    List<Country> resultsModel = new ArrayList<>();
                     String searchStr = constraint.toString().toLowerCase();
 
-                    for(CountryModel itemsModel:countryModelsList){
+                    for(Country itemsModel:countryModelsList){
                         if(itemsModel.getCountry().toLowerCase().contains(searchStr)){
                             resultsModel.add(itemsModel);
 
@@ -96,8 +96,8 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
 
-                countryModelsListFiltered = (List<CountryModel>) results.values;
-                AffectedCountries.countryModelsList = (List<CountryModel>) results.values;
+                countryModelsListFiltered = (List<Country>) results.values;
+                AffectedCountries.countryModelsList = (List<Country>) results.values;
                 notifyDataSetChanged();
 
             }

@@ -13,14 +13,15 @@
         />
 
     <TextView
+        android:id="@+id/tvCountryName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvCountryName"
         android:layout_gravity="center_vertical"
+        android:paddingLeft="15dp"
         android:text="Country Name"
+        android:textColor="#050505"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:paddingLeft="15dp"/>
+        android:textStyle="bold" />
 
 
 </LinearLayout>
